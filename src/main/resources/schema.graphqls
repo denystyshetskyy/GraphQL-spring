@@ -1,0 +1,12 @@
+type Flight {
+    name: String!
+    destination: String!
+}
+
+type Query {
+    allFlights: [Flight]
+}
+
+schema {
+    query: Query
+}
