@@ -13,10 +13,6 @@ public class Query implements GraphQLQueryResolver {
     @Autowired
     private FlightService flightService;
 
-    public Query(FlightService flightService) {
-        this.flightService = flightService;
-    }
-
     public List<Flight> allFlights() {
         return flightService.getFlights();
     }
